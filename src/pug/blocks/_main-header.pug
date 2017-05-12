@@ -1,0 +1,15 @@
+mixin b_main-header()
+  header.main-header.box.flex.flex-space-between.flex-items-center
+    .header-logo.flex.flex-start
+      +b_logo()
+      button.header-menu-navicon.dosis.header-right-sight-item Меню
+    .header-nav
+      nav.nav.flex.flex-start
+        a.nav-item.fs-16.sans.cl-brand(href='/main.html') Мастерская
+        a.nav-item.fs-16.sans.cl-brand(href='/test.html') Услуги
+        a.nav-item.fs-16.sans.cl-brand(href='/pricing.html') Блог
+        a.nav-item.fs-16.sans.cl-brand(href='/our-translators.html') Контакты
+    .header-right-sight
+      .flex.flex-end
+        a.button.button-translation.dosis.fs-18.bold.cl-brand.header-right-sight-item(href='/order.html')
+        | Проекты
