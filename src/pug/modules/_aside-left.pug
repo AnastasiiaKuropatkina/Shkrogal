@@ -1,10 +1,8 @@
 mixin b_aside-left(pageTitle)
   aside.aside-left.bg-white
     .aside-left__inner
-      .logo__block.flex
-        a.logo__link.flex.flex-justify-center.flex-items-center(href='/')
-          img.logo__image(src='./img/logo.svg', alt='logo')
+      +b_logo()
       .aside-title.fs-48.fw-300= pageTitle
-      .logo__block.logo__block_bottom.flex
-        a.logo__link.flex.flex-justify-center.flex-items-center(href='/')
-          img.logo__image(src='./img/logo.svg', alt='logo')
+      +b.logo_bottom.flex
+        +e.A.link.flex.flex-justify-center.flex-items-center(href='/')
+          +e.IMG.image(src='./img/logo.svg', alt='logo')

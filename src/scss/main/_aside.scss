@@ -1,18 +1,22 @@
 /*
   ============================================================================================================== Aside Style
 */
-.logo__block {
+.logo {
   height: $header-height;
   width: $header-height;
-  .logo__link {
+  &__link {
     width: 100%;
     padding: 1em;
     &:hover {
       background-color: $light-color;
     }
-    .logo__image {
-      width: 53px;
-    }
+  }
+  &__image {
+    width: 53px;
+  }
+  &.logo_bottom {
+    position: absolute;
+    bottom: 0;
   }
 }
 .aside-right {
@@ -30,29 +34,10 @@
   .aside-left__inner {
     height: 100%;
     position: relative;
-    .logo {
-      width: auto;
-      height: 100%;
-      padding: 0 0 0 15px;
-      display: inline-block;
-      vertical-align: middle;
-      border-left: 2px solid #1b1036;
-      .img {
-        width: auto;
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
     .aside-title {
       transform: translate3d(0, 0, 0) rotate(90deg);
       transform-origin: 0 100%;
       outline:1px solid red;
-    }
-    .logo__block_bottom {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
     }
   }
 }
