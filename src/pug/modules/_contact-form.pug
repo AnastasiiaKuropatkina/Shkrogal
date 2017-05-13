@@ -1,0 +1,17 @@
+mixin b_contact-form()
+  .contact-form
+      .es-content
+        .es-header.fs-24.fw-300
+          | Напишите нам
+        .es-inner-content
+          form#id_esauth_auth_form(onsubmit='return false', novalidate='novalidate')
+            .es-row.es-row-mail
+              label(for='id_esauth_login_field') E-mail
+              input#id_esauth_login_field(name='l', type='email')
+            .es-row.es-row-password
+              label(for='id_esauth_pwd_field') Password
+              input#id_esauth_pwd_field(name='p', type='password')
+            .es-row.es-row-mail
+              textarea#et_pb_contact_message_1.et_pb_contact_message.input(name='et_pb_contact_message_1', data-required_mark='required', data-field_type='text', data-original_id='message') Сообщение
+            .es-row
+              button#id_esauth_login_button.input_submit.es-primary-button.highlight-button(type='submit') Login

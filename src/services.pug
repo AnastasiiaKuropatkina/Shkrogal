@@ -1,0 +1,12 @@
+extends ./pug/layouts/root
+
+block header
+  +b_header()
+block main
+  -var pageTitle = "Услуги";
+  +b_aside-left(pageTitle)
+  .content.container
+    .flex
+      .flex-row-2.flex.box.flex-items-start.flex-width
+        .flex-item
+          +b_contacts()

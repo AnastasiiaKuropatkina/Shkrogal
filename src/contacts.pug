@@ -1,0 +1,17 @@
+extends ./pug/layouts/root
+
+block header
+  +b_header()
+block main
+  +b_aside-left("Контакты")
+  .content.container
+    .flex
+      .flex-row-2.flex.box.flex-items-start.flex-width
+        .flex-item
+          +b_contacts()
+        .flex-item
+          +b_contact-form()
+    .map
+      img.map-img(src='./img/map.jpg')
+block footer
+  +b_footer()

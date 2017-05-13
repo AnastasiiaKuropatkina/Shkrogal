@@ -1,0 +1,18 @@
+@mixin brand-font-title {
+	font-family: 'Roboto', sans-serif;
+}
+@mixin title-font-family {
+	font-family: 'Roboto', sans-serif;
+}
+@mixin brand-font-family {
+	font-family: 'Raleway', sans-serif;
+}
+
+@mixin brand-font {
+	color: $black;
+	@include brand-font-family;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.75;
+	-webkit-text-size-adjust: 100%;
+}

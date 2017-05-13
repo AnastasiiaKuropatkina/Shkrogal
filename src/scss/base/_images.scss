@@ -1,0 +1,73 @@
+.bg-header {
+  background-image: url('./../img/main_bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.svg {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 25px;
+}
+.main-bg-img {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.main-bg-img-2 {
+  background-image: url('./../img/main_2.jpg');
+}
+.main-bg-img-3 {
+  background-image: url('./../img/main_3.jpg');
+}
+.main-bg-img-4 {
+  background-image: url('./../img/main_4.jpg');
+}
+.map {
+  .map-img {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.section-testimonials-ul .owl-controls .owl-buttons {
+  .owl-prev,
+  .owl-next {
+    margin: 0;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    //background: transparent url('/resources/img-new/right-arrow.svg');
+  }
+
+  .owl-prev {
+    //background: transparent url('/resources/img-new/left-arrow.svg');
+  }
+}
+
+.button-new-order {
+  position: relative;
+
+  &:before {
+    content: '';
+    border: 6px solid;
+    border-color: transparent transparent transparent #3d434e;
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+  }
+}
+
+.header-menu-navicon {
+  width: 48px;
+  height: 48px;
+  //background: url('/resources/img-new/navicon.svg') no-repeat;
+  background-size: cover;
+
+  &.close {
+    //background: url('/resources/img-new/close.svg') no-repeat;
+    background-size: cover;
+  }
+}

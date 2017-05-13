@@ -1,0 +1,25 @@
+.bg-main {background-color: $white;}
+.bg-light {background-color: $light-color;}
+.bg-grey {background-color: #ededed;}
+.bg-white {background-color: $white;}
+.bg-brand {background-color: #4d4244;}
+.bg-dark {background-color: $black;}
+.bg-footer {background-color: #303030;}
+.bg-brand-gradient {background-image: linear-gradient(to right,rgb(50, 23, 90) 0%,rgb(136, 50, 61) 100%);}
+.bg-line-gradient {
+  position: relative;
+  height: 100%;
+  &:before {
+    background: linear-gradient(90deg, rgba(229, 229, 229, 1), rgba(0, 0, 0, 0) 1px);
+    background-size: 20%, 100%;
+    background-color: $white;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}

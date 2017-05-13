@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
     entry : {
         app: "./src/app.js"
-        // contacts: './src/contacts.js'
+        // contacts: "./src/app.js"
     },
     output : {
         path : path.resolve(__dirname, 'dist/'),
@@ -42,6 +42,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title : 'Project',
             template : './src/index.pug',
+            filename: 'index.html',
+
             // minify : {
             //     collapseWhitespace : true
             // },
@@ -50,13 +52,31 @@ module.exports = {
             // ],
             hash: true
         }),
-        // new HtmlWebpackPlugin({
-        //     title : 'Contact Page',
-        //     filename: 'contacts.html',
-        //     template : './src/contacts.html',
-        //     chunks : ['contacts'],
-        //     hash: true
-        // }),
+        new HtmlWebpackPlugin({
+            title : 'Blog',
+            filename: 'blog.html',
+            template : './src/blog.pug',
+            hash: true
+        }),
+        new HtmlWebpackPlugin({
+            title : 'Portfolio',
+            filename: 'portfolio.html',
+            template : './src/portfolio.pug',
+            hash: true
+        }),
+        new HtmlWebpackPlugin({
+            title : 'Services',
+            filename: 'services.html',
+            template : './src/services.pug',
+            hash: true
+        }),
+        new HtmlWebpackPlugin({
+            title : 'Contact Page',
+            filename: 'contacts.html',
+            template : './src/contacts.pug',
+            //chunks : ['contacts'],
+            hash: true
+        }),
         new ExtractTextPlugin({
             filename:'app.css',
             allChunks: true

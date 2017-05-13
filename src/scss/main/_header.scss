@@ -1,0 +1,48 @@
+/*
+  ============================================================================================================== Header
+*/
+.header {
+  padding-left: $header-height;
+}
+.main-header, .header {
+  height: $header-height;
+  position: relative;
+}
+.nav-item {
+  text-decoration: none;
+  padding: 1em;
+  line-height: 1.25;
+  border: 1px solid transparent;
+  &.current {
+    opacity: 1;
+  }
+  &:hover {
+    border-color:$light-color;
+    opacity: 1;
+    color: $link-color_hover;
+  }
+}
+.header-menu-navicon {
+  display: none;
+  outline: none;
+}
+.button-header {
+  color: $white;
+  position: relative;
+  width: 100%;
+  &:hover {
+    color: $white;
+    background:  lighten($black, 15%);
+  }
+  &:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 20px;
+    height: 24px;
+    background-image: url('./../img/projects-white.svg');
+    background-size: 20px 24px;
+  }
+}

@@ -1,0 +1,11 @@
+extends ./pug/layouts/root
+
+block header
+  +b_header()
+block main
+  -var pageTitle = "Мастерская";
+  +b_aside-left(pageTitle)
+  .content.container
+
+block footer
+  +b_footer()

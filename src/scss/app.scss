@@ -1,16 +1,27 @@
-@import "partitions/variables";
+// base main
+@import "mixins/variables";
+@import "base/colors";
+@import "main/mixins";
 @import "../../node_modules/normalize-scss/sass/normalize.scss";
-body {
-    background-color: $pink;
-    .bg-header {
-        background-image: url('./../img/main_bg.jpg');
-        background-size: cover;
-    }
 
-    #root {
-        background: $yellow;
-        &.root {
-            background: $red;
-        }
-    }
-}
+@import "base/backgrounds";
+@import "base/images";
+@import "base/typography";
+@import "base/form";
+@import "base/utility";
+
+@import "main/base";
+@import "base/design";
+
+@import "main/header";
+@import "main/aside";
+@import "main/footer";
+
+// modules
+
+// pages
+@import "pages/contacts";
+// vendor
+
+// Media
+//@import "main/media-query";
