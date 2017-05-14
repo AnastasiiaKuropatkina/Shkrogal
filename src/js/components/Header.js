@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
         return <header className="main-header box flex flex-space-between flex-items-stretch">
             <div className="logo flex">
-                <a className="logo__link flex flex-justify-center flex-items-center box" href="/">
+                <a className="logo__link flex flex-justify-center flex-items-center box">
                     <Link to="/">
                         <img className="logo__image" src="src/img/logo.svg" alt="" role="presentation"/>
                     </Link>

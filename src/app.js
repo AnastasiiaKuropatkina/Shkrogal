@@ -6,10 +6,11 @@ import { render } from 'react-dom'
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Match
 } from 'react-router-dom'
 
 import Wrapper from "./js/components/Wrapper"
+import Portfolio from "./js/components/Portfolio"
 const __DEV__ = true;
 const root = document.getElementById('root');
 
@@ -18,7 +19,10 @@ if (__DEV__) {
     try {
         render(
             <Router >
-                <Route path='/' component={Wrapper} />
+                <div>
+                    <Route exact path="/" component={Wrapper}/>
+                    <Route path="/portfolio.html" component={Portfolio}/>
+                </div>
             </Router>,
             root
         )
@@ -26,10 +30,10 @@ if (__DEV__) {
         render(<RedBox error={e} />, root)
     }
 } else {
-    render(
+    /*render(
         <Router >
             <Route path='/' component={Wrapper} />
         </Router>,
         root
-    )
+    )*/
 }
