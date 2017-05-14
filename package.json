@@ -1,5 +1,5 @@
 {
-  "name": "webpack2_tutorial",
+  "name": "Projector_Shkrogal",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -35,6 +35,7 @@
     "pug-html-loader": "^1.1.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "redbox-react": "^1.3.6",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.4",
     "style-loader": "^0.17.0",
@@ -42,6 +43,9 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "normalize-scss": "^6.0.0"
+    "babel-polyfill": "^6.23.0",
+    "normalize-scss": "^6.0.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   }
 }

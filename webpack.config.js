@@ -85,7 +85,7 @@ module.exports = {
     devServer: {
         contentBase: path.join("dist/"),
         compress: true,
-        port:8819,
+        port:8888,
         overlay: {
             warnings: true,
             errors: true
