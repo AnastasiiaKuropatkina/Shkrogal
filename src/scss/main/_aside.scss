@@ -20,14 +20,14 @@
   &__title {
     transform: translate3d(0, 0, 0) rotate(-90deg);
     transform-origin: 0 0;
-    height: 120px;
+    height: $headerHeight;
     position: absolute;
     bottom: 0;
     margin: auto;
     left: 0;
     width: calc(100vh - 240px);
     padding: 0 0 0 20px;
-    line-height: 120px;
+    line-height: $headerHeight;
     text-align: right;
   }
 }

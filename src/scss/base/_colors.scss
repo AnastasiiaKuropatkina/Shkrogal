@@ -4,13 +4,39 @@ $line-color: rgba(229, 229, 229, 1);
 $link-color: #1080d0;
 $link-color_hover: #1080d0;
 $action: #1080d0;
-$black: #2f2f2f;
+$black: #050000;
+$title-black: #222222;
 $white: #fff;
+$grey: #908f8f;
 
-body {color: #2b3840;}
-.cl-brand {color: $black;}
+body {color: $black}
+.cl-brand {color: $black}
+.cl-title {color: $title-black}
 .cl-brand-border {color: #fea702;}
 .cl-brand-light {color: #f6bd50;}
-.cl-brand-grey {color: #a8a8a8;}
+.cl-grey {color: $grey;}
 .cl-white {color: $white;}
 .color-svg-icon {fill: $white}
+
+.bg-main {background-color: $white;}
+.bg-light {background-color: $light-color;}
+.bg-grey {background-color: #ededed;}
+.bg-white {background-color: $white;}
+.bg-dark {background-color: #2f2f2f;}
+.bg-line-gradient {
+  position: relative;
+  height: 100%;
+  &:before {
+    background: linear-gradient(90deg, rgba(229, 229, 229, 1), rgba(0, 0, 0, 0) 1px);
+    background-size: 20%, 100%;
+    background-color: $white;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}

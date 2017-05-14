@@ -60,7 +60,8 @@ html, body {
 }
 .container {
   width: 100%;
-  max-width: 900px;
+  padding-left: $headerHeight;
+  padding-right: $headerHeight;
   margin: 0 auto;
 }
 
@@ -111,6 +112,7 @@ a {
 .flex-items-end {align-items: flex-end;}
 .flex-items-stretch {align-items: stretch;}
 .flex-end {justify-content: flex-end;}
+.flex-width {width: 100%}
 .flex-row-2 {
   .flex-item {
     width: 50%;
@@ -150,10 +152,15 @@ a {
   .flex-item {
     box-sizing: border-box;
     width: 40%;
+    &.stat-block {
+      width: 50%;
+    }
 
     &:nth-child(2n) {
       width: 20%;
-      outline: 1px solid red;
+      &.stat-block {
+        width: 50%;
+      }
     }
   }
 }
