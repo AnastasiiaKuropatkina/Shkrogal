@@ -17,7 +17,7 @@
     opacity: 1;
   }
   &:hover {
-    border-color:$light-color;
+    border-color:$line-color;
     opacity: 1;
     color: $link-color_hover;
   }
@@ -32,7 +32,7 @@
   width: 100%;
   &:hover {
     color: $white;
-    background:  lighten($black, 15%);
+    background: $light-black;
   }
   &:before {
     content: '';

@@ -465,7 +465,7 @@
 
     &:hover, &:focus {
       color: $white;
-      background: lighten($black, 15%);
+      background: $light-black;
     }
   }
   &:focus {
@@ -525,6 +525,6 @@
 
   &:hover {
     color: $white;
-    background:  lighten($black, 15%);
+    background:  $light-black;
   }
 }

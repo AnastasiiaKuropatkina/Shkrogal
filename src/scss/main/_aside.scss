@@ -25,8 +25,8 @@
     bottom: 0;
     margin: auto;
     left: 0;
-    width: calc(100vh - 240px);
-    padding: 0 0 0 20px;
+    width: calc(100vh - #{$headerHeight-2});
+    padding: 0 1rem 0 0;
     line-height: $headerHeight;
     text-align: right;
   }
