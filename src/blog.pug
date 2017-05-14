@@ -1,11 +1,11 @@
 extends ./pug/layouts/root
 
 block header
-  +b_header()
+  +b_header(menu)
 block main
-  -var pageTitle = "Блог";
-  +b_aside-left(pageTitle)
+  +b_aside-left("Блог")
   .content.container
+    +b_products-menu()
 
 block footer
   +b_footer()

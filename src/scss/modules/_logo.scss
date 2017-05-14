@@ -1,0 +1,21 @@
+/*
+  ============================================================================================================== Aside Style
+*/
+.logo {
+  height: $headerHeight;
+  width: $headerHeight;
+  &__link {
+    width: 100%;
+    padding: 1em;
+    &:hover {
+      background-color: $light-color;
+    }
+  }
+  &__image {
+    width: 53px;
+  }
+  &.logo_bottom {
+    position: absolute;
+    bottom: 0;
+  }
+}

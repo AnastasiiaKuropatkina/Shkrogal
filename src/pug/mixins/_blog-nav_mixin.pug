@@ -1,0 +1,4 @@
+mixin authors_menu(prefix, author_Menu)
+  each item, index in author_Menu
+    +e.A.product-wrap.sec4(href=item.authorSrc)
+      +e.SPAN.title #{item.authorTitle}

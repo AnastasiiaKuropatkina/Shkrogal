@@ -1,43 +1,33 @@
 /*
   ============================================================================================================== Aside Style
 */
-.logo {
-  height: $header-height;
-  width: $header-height;
-  &__link {
-    width: 100%;
-    padding: 1em;
-    &:hover {
-      background-color: $light-color;
-    }
-  }
-  &__image {
-    width: 53px;
-  }
-  &.logo_bottom {
-    position: absolute;
-    bottom: 0;
-  }
-}
 .aside-right {
-  width: $header-height;
+  width: $headerHeight;
   border-left: 1px solid $line-color;
 }
 .aside-left {
   border-right: 1px solid $line-color;
-  width: $header-height;
+  width: $headerHeight;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
-  .aside-left__inner {
+  &__inner {
     height: 100%;
     position: relative;
-    .aside-title {
-      transform: translate3d(0, 0, 0) rotate(90deg);
-      transform-origin: 0 100%;
-      outline:1px solid red;
-    }
+  }
+  &__title {
+    transform: translate3d(0, 0, 0) rotate(-90deg);
+    transform-origin: 0 0;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    width: calc(100vh - 240px);
+    padding: 0 0 0 20px;
+    line-height: 120px;
+    text-align: right;
   }
 }

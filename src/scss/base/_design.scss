@@ -4,6 +4,31 @@
 }
 .article {
   padding: 2vw 4vw;
+  box-sizing: border-box;
+  &.article-pad-fix {
+    padding: 2vw 4vw 0;
+  }
+}
+.history {
+  position: relative;
+  &__block {
+    position: absolute;
+    bottom: 0;
+    width: 4*$headerHeight;
+    left: 50%;
+    margin-left: -240px;
+  }
+  .main-bg-img-4 {
+    position: relative;
+    height: calc(100% - 120px);
+  }
+  &__name {
+    position: absolute;
+    bottom: -$headerHeight;
+    left: 2*$headerHeight;
+    height: $headerHeight;
+    width: 50%;
+  }
 }
 /*
   ======================================================================================================= About section

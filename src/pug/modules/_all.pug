@@ -1,12 +1,26 @@
-include _main-header
+//- Base
+include _header
+include ../data/_menu_data
 include _logo
+include _aside-left
+include ../includes/footer
+include _footer
+
+//- Main Page
+include _main-header
 include _bg-header
 include _main-project
 include _count-section
 include _history-section
-include _footer
-include ../includes/footer
+
+//- Contact Page
 include _contacts
-include _aside-left
 include _contact-form
-include _header
+
+//- Blog Page
+include _blog-nav
+include ../data/_blog-post_data
+include ../data/_blog-post-content_data
+include ../mixins/_blog-nav_mixin
+
+include _blog-post

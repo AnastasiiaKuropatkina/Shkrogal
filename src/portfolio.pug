@@ -1,7 +1,7 @@
 extends ./pug/layouts/root
 
 block header
-  +b_header()
+  +b_header(menu)
 block main
   -var pageTitle = "Мастерская";
   +b_aside-left(pageTitle)

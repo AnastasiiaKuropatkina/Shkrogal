@@ -1,10 +1,9 @@
 extends ./pug/layouts/root
 
 block header
-  +b_header()
+  +b_header(menu)
 block main
-  -var pageTitle = "Услуги";
-  +b_aside-left(pageTitle)
+  +b_aside-left("Услуги")
   .content.container
     .flex
       .flex-row-2.flex.box.flex-items-start.flex-width
