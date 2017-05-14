@@ -117,10 +117,10 @@ a {
     box-sizing: border-box;
 
     &:nth-child(2n-1) {
-      padding-right: 20px;
+      //padding-right: 20px;
     }
     &:nth-child(2n) {
-      padding-left: 20px;
+      //padding-left: 20px;
     }
   }
 }
@@ -131,6 +131,29 @@ a {
 
     &:nth-child(2) {
       padding: 0 32px;
+    }
+  }
+}
+.flex-row-3-2 {
+  .flex-item {
+    box-sizing: border-box;
+
+    &:nth-child(2n-1) {
+      width: 60%;
+    }
+    &:nth-child(2n) {
+      width: 40%;
+    }
+  }
+}
+.flex-row-5-2-5 {
+  .flex-item {
+    box-sizing: border-box;
+    width: 40%;
+
+    &:nth-child(2n) {
+      width: 20%;
+      outline: 1px solid red;
     }
   }
 }

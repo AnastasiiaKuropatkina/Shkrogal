@@ -5,8 +5,11 @@
 .article {
   padding: 2vw 4vw;
   box-sizing: border-box;
-  &.article-pad-fix {
+  &.article-pad-bottom {
     padding: 2vw 4vw 0;
+  }
+  &.article-pad-right {
+    padding: 2vw 0 2vw 4vw;
   }
 }
 .history {
@@ -1144,10 +1147,13 @@
 }
 .button-more {
   display: inline-block;
+  border: 1px solid $black;
+  color: $white;
+  background-color: $black;
 
   &:hover {
-    color: #fea702;
-    border-color: #d9d9d9;
+    color: $white;
+    background:  lighten($black, 15%);
     
     &:after {
       display: none;
