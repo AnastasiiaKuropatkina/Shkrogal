@@ -647,3 +647,38 @@
     background:  $light-black;
   }
 }
+.main-wrapper {overflow: hidden; }
+.blog-post {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -175px;
+    right: 0;
+    border-radius: 5*$headerHeight 5*$headerHeight 0 0;
+    height: 1280px;
+    width: 5*$headerHeight;
+    margin: auto;
+    border: 1px solid;
+    border-color: #3a3a3a #3a3a3a transparent #3a3a3a;
+    pointer-events: none;
+    opacity: .2;
+  }
+}
+.blog-posts {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -215px;
+    left: -$headerHeight;
+    border-radius: 5*$headerHeight 5*$headerHeight 0 0;
+    height: 1146px;
+    width: 5*$headerHeight;
+    margin: auto;
+    border: 1px solid;
+    border-color: #3a3a3a #3a3a3a transparent #3a3a3a;
+    pointer-events: none;
+    opacity: .2;
+  }
+}
