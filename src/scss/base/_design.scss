@@ -648,7 +648,7 @@
   }
 }
 .main-wrapper {overflow: hidden; }
-.blog-post {
+.blog-post, .contact-form {
   position: relative;
   &:before {
     content: '';
@@ -663,6 +663,11 @@
     border-color: #3a3a3a #3a3a3a transparent #3a3a3a;
     pointer-events: none;
     opacity: .2;
+  }
+}
+.contact-form {
+  &:before {
+    top: -80px !important;
   }
 }
 .blog-posts {
