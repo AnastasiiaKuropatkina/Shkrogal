@@ -1,7 +1,26 @@
 .footer{
+  position: relative;
+  overflow: hidden;
   height: (2*$headerHeight);
   padding-left: $headerHeight;
   padding-right: $headerHeight;
+  &:before {
+    content: '';
+    position: absolute;
+    border-radius: 29.32291666666667vw;
+    border: 1px solid #f3f3f3;
+    margin: auto;
+    right: 0;
+    top: -4.375vw;
+    width: 58.64583333333333vw;
+    height: 61.09375vw;
+    opacity: .2;
+    pointer-events: none;
+  }
+  .footer-link {
+    border: 2px solid $white;
+    padding: 12px 16px;
+  }
   .container {
     padding: 80px 0;
     .footer-block {

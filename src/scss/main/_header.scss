@@ -4,6 +4,9 @@
 .header {
   padding-left: $headerHeight;
 }
+.header-nav {
+  width: calc(100% - #{$headerHeight-2}) !important;
+}
 .main-header, .header {
   height: $headerHeight;
   position: relative;

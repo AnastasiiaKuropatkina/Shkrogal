@@ -18,16 +18,45 @@ ol {
 
   p {
     margin: 16px 0;
-    line-height: 120%;
+    line-height: 150%;
   }
 }
 html, body {
   height: 100%;
 }
 .bg-wrapper {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
+  z-index: 9;
+  pointer-events: none;
+  .bg-line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    opacity: .2;
+    background-color: #3a3a3a;
+    &.bg-line_1 {
+      left: $headerHeight;
+    }
+    &.bg-line_2 {
+      left: 3*$headerHeight;
+    }
+    &.bg-line_3 {
+      left: 5*$headerHeight;
+    }
+    &.bg-line_4 {
+      left: 7*$headerHeight;
+    }
+    &.bg-line_5 {
+      left: 9*$headerHeight;
+    }
+    &.bg-line_6 {
+      right: $headerHeight;
+    }
+  }
 }
 .main-wrapper {
   width: 100%;
@@ -141,26 +170,39 @@ a {
     box-sizing: border-box;
 
     &:nth-child(2n-1) {
-      width: 60%;
+      width: 7*$headerHeight;
     }
     &:nth-child(2n) {
-      width: 40%;
+      width: 5*$headerHeight;
     }
   }
 }
 .flex-row-5-2-5 {
   .flex-item {
     box-sizing: border-box;
-    width: 40%;
+    width: 5*$headerHeight;
     &.stat-block {
       width: 50%;
     }
 
     &:nth-child(2n) {
-      width: 20%;
+      width: $headerHeight-2;
       &.stat-block {
         width: 50%;
       }
+    }
+  }
+}
+
+.flex-row-big-post {
+  padding-top: $postHeight/2;
+  padding-bottom: $postHeight/2;
+  .flex-item {
+    box-sizing: border-box;
+    width: 66%;
+
+    &:nth-child(2n) {
+      width: 33%;
     }
   }
 }

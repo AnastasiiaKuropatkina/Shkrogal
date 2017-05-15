@@ -1,4 +1,4 @@
 mixin authors_menu(prefix, author_Menu)
   each item, index in author_Menu
-    +e.A.product-wrap.sec4(href=item.authorSrc)
-      +e.SPAN.title #{item.authorTitle}
+    .A.button.button-author(href=item.authorSrc)
+      +e.SPAN.title.fw-300.fs-14 #{item.authorTitle}

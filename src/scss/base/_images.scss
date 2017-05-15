@@ -17,18 +17,28 @@
 }
 .main-bg-img-2 {
   background-image: url('./../img/main_2.jpg');
+  background-size: cover;
 }
 .main-bg-img-3 {
   background-image: url('./../img/main_3.jpg');
+  background-size: cover;
 }
 .main-bg-img-4 {
   background-image: url('./../img/main_4.jpg');
+  background-size: cover;
 }
 .main-bg-img-5 {
   background-image: url('./../img/main_5.jpg');
+  background-size: cover;
 }
-.main-bg-img-6 {
+.blog-bg-img {
   background-image: url('./../img/blog.jpg');
+  background-position: 100% center;
+  background-size: cover;
+}
+.blog-img-big {
+  background-image: url('./../img/blog_2.jpg');
+  background-size: cover;
 }
 .map {
   .map-img {

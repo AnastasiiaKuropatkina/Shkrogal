@@ -3,10 +3,8 @@
 */
 .aside-right {
   width: $headerHeight;
-  border-left: 1px solid $line-color;
 }
 .aside-left {
-  border-right: 1px solid $line-color;
   width: $headerHeight;
   height: 100vh;
   position: fixed;

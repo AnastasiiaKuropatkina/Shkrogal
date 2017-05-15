@@ -4,24 +4,24 @@ mixin b_stat-section()
         .flex
           .flex-row-5-2-5.flex.box.flex-items-start.flex-width
             .flex-item
-              article.article.box
-                h2.fs-200.fw-100
+              article.article.article-pad-top.article-pad-bottom.box
+                h2.fs-200.fw-100.stat-title
                   | 1976
-                p.fw-300.cl-grey
+                p.fw-300.cl-grey.stat-des
                   | Год основания компании
             .flex-item
-              article.article.box
-                p.fw-300
+              .box
+                p.fw-300.stat-box
                   span.fs-72 7
                   span.cl-grey Человек в команде
-                p.fw-300
+                p.fw-300.stat-box
                   span.fs-72 47
                   span.cl-grey Объектов построено
-                p.fw-300
+                p.fw-300.stat-box
                   span.fs-72 4
                   span.cl-grey Государственные премии
             .flex-item.bg-dark
-              flex.article
+              .flex.stat-blocks
                 .flex-row-2.flex.box.flex-items-start.flex-width.flex-wrap
                   .flex-item.stat-block.ta-center
                     img(src='./img/main-icon-1.svg')

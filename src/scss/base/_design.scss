@@ -3,14 +3,124 @@
   height: calc(100vh - 120px);
 }
 .article {
-  padding: 2vw 4vw;
+  padding: $postHeight $headerHeight;
   box-sizing: border-box;
   &.article-pad-bottom {
-    padding: 2vw 4vw 0;
+    padding-bottom: 0;
+  }
+  &.article-pad-top {
+    padding-top: 0;
   }
   &.article-pad-right {
-    padding: 2vw 0 2vw 4vw;
+    padding-right: 0;
   }
+  &.article__padding-top_small, .stat-block {
+    padding-top: $postHeight/2;
+  }
+  &.article__padding-bottom_small, .stat-block {
+    padding-bottom: $postHeight/2;
+  }
+  &.article__padding-top_post, .img-history {
+    padding-top: $postHeight;
+  }
+  &.article__padding-bottom_post, .img-history {
+    padding-bottom: $postHeight;
+  }
+  &.article-img-block {
+    margin: $postHeight/2 0 0 $headerHeight;
+    height: 100%;
+    padding: 0;
+    h2 {
+      background-color: $white;
+      padding-bottom: $postHeight/2;
+      padding-right: $headerHeight;
+    }
+    img {
+      padding-top: $postHeight/2;
+    }
+  }
+}
+.stat-des {
+  position: relative;
+  top: -20px
+}
+.stat-title {
+  line-height: 100%;
+}
+.stat-box {
+  .fs-72 {
+    line-height: 100px;
+  }
+  .cl-grey {
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+.blog-img-block {
+  height: 100%;
+}
+.article-blog-post {
+  padding: $postHeight/4 $postHeight/2;
+  box-sizing: border-box;
+}
+.article-blog-post-small {
+  padding: $postHeight/4 0;
+  box-sizing: border-box;
+  h2 {
+    margin-top: 2rem;
+  }
+}
+.blog-menu {
+  .blog-menu-title {
+    padding: 12px 16px;
+  }
+}
+.author {
+  overflow: hidden;
+}
+.button.button-author {
+  border-color: transparent transparent $line-color transparent;
+  float: left;
+  &:hover {
+    background-color: $black;
+    color: $white;
+    border-color: $black;
+  }
+}
+.img-blog {
+  height: 250px;
+  overflow: hidden;
+  .img-blog__image {
+    background-size: cover;
+  }
+}
+.button-main {
+  float: right;
+}
+.button.button-post {
+  border-color: transparent;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  &:hover {
+    border-color: transparent;
+  }
+  &:hover:before {
+    background-color: $link-color_hover;
+  }
+  &:before {
+    height: 2px;
+    position: absolute;
+    content: "";
+    background-color: #2f2f2f;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+  }
+}
+.article-post {
+  padding: $postHeight;
+  box-sizing: border-box;
 }
 .history {
   position: relative;
@@ -19,7 +129,7 @@
     bottom: 0;
     width: 4*$headerHeight;
     left: 50%;
-    margin-left: -240px;
+    margin-left: -2*$headerHeight;
   }
   .main-bg-img-4 {
     position: relative;
@@ -33,13 +143,22 @@
     width: 50%;
   }
 }
-.stat-block {
-  img {
-    height: 60px;
-    margin: auto;
-    opacity: .5;
+.stat-section {
+  .stat-blocks {
+    padding-right: $headerHeight;
+  }
+  .stat-block {
+    align-self: center;
+    padding-top: $postHeight/2;
+    padding-bottom: $postHeight/2;
+    img {
+      height: 60px;
+      margin: auto;
+      opacity: .5;
+    }
   }
 }
+
 
 /*
   ======================================================================================================= Stats section

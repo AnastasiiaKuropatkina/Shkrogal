@@ -1,8 +1,9 @@
-mixin b_products-menu()
-  .container-full
-    .container
-      +b.p.container-title Виберіть категорію
+mixin b_blog-menu()
+  .blog-menu.container-full
+    +b.p.fw-700.blog-menu-title Автор блога
 
   +b.author.container-full
-    .container
-      +authors_menu('author__wrap ', author_Menu)
+    +authors_menu('author__wrap ', author_Menu)
+
+    a.button.button-main(href="/")
+      span.title.fw-300.fs-14 Корпоративный блог
