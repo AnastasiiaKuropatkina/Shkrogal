@@ -38,6 +38,7 @@ html, body {
     top: 0;
     opacity: .2;
     background-color: #3a3a3a;
+    box-shadow: 1px 0 0 0px #f3f3f3;
     &.bg-line_1 {
       left: $headerHeight;
     }
